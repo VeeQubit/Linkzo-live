@@ -58,6 +58,6 @@ The signaling server coordinates the connection establishment process but does n
 ## System Architecture
 
 Linkzo Live follows a hybrid architecture consisting of a signaling layer and a peer-to-peer media layer.
-## System Architecture
+## System Architecture Diagram
 
 ![Linkzo Live System Architecture](assets/architecture.svg)
