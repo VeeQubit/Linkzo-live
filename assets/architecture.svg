@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 520" width="100%" height="100%">
+  <defs>
+    <!-- Solid black markers for sharp arrowheads -->
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 10 5 L 0 8.5 z" fill="#000000" />
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="#ffffff" />
+
+  <!-- Styles -->
+  <style>
+    .box {
+      fill: #ffffff;
+      stroke: #000000;
+      stroke-width: 3.5;
+    }
+    .line {
+      stroke: #000000;
+      stroke-width: 3;
+      fill: none;
+    }
+    .title-text {
+      font-family: "Times New Roman", Times, serif;
+      font-size: 26px;
+      text-anchor: middle;
+      dominant-baseline: middle;
+      fill: #000000;
+    }
+    .label-text {
+      font-family: "Times New Roman", Times, serif;
+      font-size: 24px;
+      text-anchor: middle;
+      dominant-baseline: middle;
+      fill: #000000;
+    }
+  </style>
+
+  <!-- Top Box: Node.js + Socket.IO Signaling Server -->
+  <rect class="box" x="310" y="45" width="380" height="125" />
+  <text class="title-text" x="500" y="93">Node.js + Socket.IO</text>
+  <text class="title-text" x="500" y="131">Signaling Server</text>
+
+  <!-- Signaling Branch Lines -->
+  <!-- Top vertical stem -->
+  <line class="line" x1="500" y1="170" x2="500" y2="218" />
+  
+  <!-- Text Label between lines: SDP / ICE / Room Events -->
+  <text class="label-text" x="500" y="240">SDP / ICE / Room Events</text>
+
+  <!-- Lower vertical stem -->
+  <line class="line" x1="500" y1="260" x2="500" y2="300" />
+  <!-- Horizontal branching line -->
+  <line class="line" x1="220" y1="300" x2="780" y2="300" />
+  <!-- Left downward arrow -->
+  <line class="line" x1="220" y1="300" x2="220" y2="352" marker-end="url(#arrow)" />
+  <!-- Right downward arrow -->
+  <line class="line" x1="780" y1="300" x2="780" y2="352" marker-end="url(#arrow)" />
+
+  <!-- Bottom Left Box: Client A Browser -->
+  <rect class="box" x="100" y="355" width="245" height="120" />
+  <text class="title-text" x="222" y="401">Client A</text>
+  <text class="title-text" x="222" y="437">Browser</text>
+
+  <!-- Bottom Right Box: Client B Browser -->
+  <rect class="box" x="655" y="355" width="245" height="120" />
+  <text class="title-text" x="778" y="401">Client B</text>
+  <text class="title-text" x="778" y="437">Browser</text>
+
+  <!-- Peer-to-Peer Bidirectional Arrow -->
+  <line class="line" x1="358" y1="410" x2="642" y2="410" marker-start="url(#arrow)" marker-end="url(#arrow)" />
+  <text class="label-text" x="500" y="392">WebRTC</text>
+  <text class="label-text" x="500" y="430">P2P Media</text>
+</svg>
