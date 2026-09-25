@@ -57,20 +57,8 @@ The signaling server coordinates the connection establishment process but does n
 
 ## System Architecture
 
-Linkzo Live follows a hybrid architecture consisting of a signaling layer and a peer-to-peer media layer.
+Linkzo Live follows a hybrid architecture consisting of a signaling layer and a peer-to-peer media layer
 
+![Linkzo Live System Architecture](assets/architecture.svg)
 
-                         ┌─────────────────────────┐
-                         │   Node.js + Socket.IO   │
-                         │    Signaling Server     │
-                         └────────────┬────────────┘
-                                      │
-                         SDP / ICE / Room Events
-                                      │
-                     ┌────────────────┴────────────────┐
-                     │                                 │
-                     ▼                                 ▼
-              ┌─────────────┐                   ┌─────────────┐
-              │   Client A  │◄──── WebRTC ────►│   Client B  │
-              │   Browser   │   P2P Media      │   Browser   │
-              └─────────────┘                   └─────────────┘
+                       
